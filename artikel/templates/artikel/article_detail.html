@@ -11,12 +11,7 @@
     <div class="col-md-8">
         <h1>{{article.judul}}</h1>
         <p>{{article.kategori}}|{{article.published}}</p>
-        <div class="container">
-        
-        {% for f in article.File.all %}
-            <!-- <img class="img-fluid" src="{{f.image.url}}" alt="Responsive image"> -->
-        {% endfor %}
-        
+        <div class="container">    
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
         {% for f in article.File.all %}
